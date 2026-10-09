@@ -86,7 +86,7 @@
 
         <!-- Note -->
         <div class="mt-8 rounded-2xl border border-amber-300/40 bg-amber-50/80 p-5 text-center text-sm leading-6 text-amber-900 dark:border-amber-700/30 dark:bg-amber-950/40 dark:text-amber-200">
-            <span class="font-bold">ملاحظة مهمة:</span> بعد إتمام التحويل، يُرجى إبلاغ إدارة المجمع لتحديث المبلغ المحصَّل على الصفحة وتثبيت مساهمتك الكريمة.
+            <span class="font-bold">ملاحظة مهمة:</span> بعد إتمام التحويل، ستقوم إدارة المجمع بتحديث المبلغ المحصَّل على الصفحة وتثبيت مساهمتك الكريمة.
         </div>
     </section>
 

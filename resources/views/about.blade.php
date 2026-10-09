@@ -542,12 +542,12 @@
                         </blockquote>
 
                         <p class="text-xs text-emerald-300/80">
-                            — جزء من حديث نبوي شريف رواه الإمام مسلم والترمذي
+                            رواه الإمام مسلم والترمذي
                         </p>
 
                         <div class="pt-4 border-t border-emerald-800/60">
                             <p class="text-sm text-stone-300">
-                                نرحب بكل راغبٍ في حفظ كتاب الله والتفقه في الدين للانضمام إلى حلقات المجمع.
+                                نرحب بكل راغبٍ في التعلم والتفقه في الدين للانضمام إلى المجمع.
                             </p>
                         </div>
                     </div>
@@ -566,7 +566,7 @@
                 ساهم في بناء جيل القرآن ونشر العلم الشرعي
             </h2>
             <p class="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-emerald-100/90 leading-relaxed font-light">
-                تبرعك يدعم رواتب الشيوخ والمدرسين، وتوفير المصاحف والمراجع، وكفالة حلقات التحفيظ لطلبة العلم.
+                تبرعك يدعم العملية التعليمية والتربوية، وتوفير المستلزمات والاحتياجيات، وكفالة طلاب وطالبات العلم.
             </p>
             <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a href="{{ route('donations') }}"
