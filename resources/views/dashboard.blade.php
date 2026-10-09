@@ -14,7 +14,7 @@
         <!-- <div class="relative h-full flex-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
             <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
         </div> -->
-        <x-layouts::site title="من نحن">
+        <!-- <x-layouts::site title="من نحن">
     <section class="bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-900 dark:to-zinc-950">
         <div class="mx-auto w-full max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
             <h1 class="text-3xl font-bold leading-tight sm:text-5xl">مجمع الهامة الشرعي التعليمي</h1>
@@ -120,6 +120,6 @@
             <flux:button :href="route('donations')" variant="primary">تبرع الآن</flux:button>
         </div>
     </section>
-</x-layouts::site>
+</x-layouts::site> -->
     </div>
 </x-layouts::app>
