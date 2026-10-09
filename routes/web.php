@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DonationController;
 use App\Livewire\Admin\DonationSettings;
 use Illuminate\Support\Facades\Route;
@@ -8,7 +9,7 @@ Route::view('/', 'about')->name('home');
 Route::get('donations', [DonationController::class, 'index'])->name('donations');
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::view('dashboard', 'dashboard')->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 Route::middleware(['auth', 'can:admin'])->group(function () {

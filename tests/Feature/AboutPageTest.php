@@ -5,6 +5,6 @@ test('renders the about page with the complex description and services', functio
 
     $response->assertOk();
     $response->assertSee('مجمع الهامة الشرعي التعليمي');
-    $response->assertSee('خدمات المجمع');
+    $response->assertSee('البرامج التعليمية');
     $response->assertSee('تحفيظ القرآن الكريم');
 });
