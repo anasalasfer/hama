@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-quran: 'Amiri', 'Traditional Arabic', serif;
+
+    --color-emerald-50: #f0fdf4;
+    --color-emerald-100: #dcfce7;
+    --color-emerald-200: #bbf7d0;
+    --color-emerald-300: #86efac;
+    --color-emerald-400: #4ade80;
+    --color-emerald-500: #22c55e;
+    --color-emerald-600: #16a34a;
+    --color-emerald-700: #15803d;
+    --color-emerald-800: #166534;
+    --color-emerald-900: #14532d;
+    --color-emerald-950: #052e16;
+
+    --color-amber-50: #fffbeb;
+    --color-amber-100: #fef3c7;
+    --color-amber-200: #fde68a;
+    --color-amber-300: #fcd34d;
+    --color-amber-400: #fbbf24;
+    --color-amber-500: #f59e0b;
+    --color-amber-600: #d97706;
+    --color-amber-700: #b45309;
+    --color-amber-800: #92400e;
+    --color-amber-900: #78350f;
+
+    --color-accent: #0f766e;
+    --color-accent-content: #0f766e;
+    --color-accent-foreground: var(--color-white);
+}
+
+@layer theme {
+    .dark {
+        --color-accent: #14b8a6;
+        --color-accent-content: #14b8a6;
+        --color-accent-foreground: #042f2e;
+    }
+}
+
+@layer base {
+    html {
+        font-family: var(--font-sans);
+        scroll-behavior: smooth;
+    }
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+.font-quran {
+    font-family: var(--font-quran);
+}
+
+/* Islamic Geometric Background Pattern */
+.islamic-pattern {
+    background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1.5px, transparent 1.5px), radial-gradient(rgba(245, 158, 11, 0.06) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+.dark .islamic-pattern {
+    background-image: radial-gradient(rgba(52, 211, 153, 0.08) 1.5px, transparent 1.5px), radial-gradient(rgba(251, 191, 36, 0.05) 1.5px, transparent 1.5px);
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-emerald-600 ring-offset-2;
+}
